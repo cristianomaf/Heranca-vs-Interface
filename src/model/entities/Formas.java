@@ -1,26 +1,9 @@
 package model.entities;
 
-import model.enums.Cor;
 
-public abstract class Formas {
-	Cor cor;	
+
+public interface Formas {
 	
-	public Formas() {
-		
-	}
-	public Formas(Cor cor) {
-		this.cor = cor;
-	}
-	
-	//get e sets 
-	public Cor getCor() {
-		return cor;
-	}
-	public void setCor(Cor cor) {
-		this.cor = cor;
-	}
-
-
-	public abstract double area();
+	 double area();      // na classe interface o metodo aqui já é public e abstract
 
 }

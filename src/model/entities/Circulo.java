@@ -2,12 +2,9 @@ package model.entities;
 
 import model.enums.Cor;
 
-public class Circulo extends Formas{
+public class Circulo extends FormaAbstract{
 	private Double raio;
 	
-	public Circulo () {
-		
-	}
 	public Circulo(Double raio,Cor cor) {
 		super(cor);
 		this.raio = raio;
@@ -28,7 +25,7 @@ public class Circulo extends Formas{
 	}
 	@Override
 	public String toString() {
-		return "Circulo [raio=" + raio + ", cor=" + cor + ", area()=" + area() + "]";
+		return "Circulo [raio=" + raio + ", cor=" + getCor() + ", area()=" + area() + "]";
 	}
 	
 	

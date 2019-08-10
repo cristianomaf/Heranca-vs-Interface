@@ -2,13 +2,11 @@ package model.entities;
 
 import model.enums.Cor;
 
-public class Retangulo extends Formas {
+public class Retangulo extends FormaAbstract {
 	private Double base;
 	private Double altura;
 	
-	public Retangulo() {
-		
-	}		
+			
 	public Retangulo(Double base, Double altura,Cor cor) {
 		super(cor); // cor vem da superclasse Formas
 		this.base = base;
@@ -39,7 +37,7 @@ public class Retangulo extends Formas {
 	}
 	@Override
 	public String toString() {
-		return "Retangulo "+ cor+" [base= " + base + ", altura=" + altura + " tem area de : "+ String.format("%.2f",area()) ;
+		return "Retangulo "+getCor()+" [base= " + base + ", altura=" + altura + " tem area de : "+ String.format("%.2f",area()) ;
 	}
 	
 
